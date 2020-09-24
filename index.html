@@ -36,7 +36,7 @@
       <input type="text" placeholder="Username" />
       <input type="password" placeholder="password" />
       <input type="checkbox" />
-      <button type="button" class="bn" onclick=fn()>Click here to log in</button>
+      <button type="button" class="bn" onclick=buttonclick()>Click here to log in</button>
     </form>
     <div class="tble">
       <table>
@@ -63,22 +63,23 @@
     >
     <figure>
       <img src="a1s1.PNG" alt="report" />
-      <figcaption id="ri">Report Image</figcaption>
+      <figcaption>Report Image</figcaption>
     </figure>
 
     <div>
-      <h1>chocolate</h1>
+      <h1 id="choco">chocolate</h1>
       <h2>dairy milk</h2>
     </div>
   </body>
   <script>
-    function fn() {
-      var x = document.getElementById("ri");
-      if (x.style.display == "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
+    function buttonclick(){
+      var x = document.getElementById("choco");
+      if(x.style.display=="block"){
+        x.style.display="none";
+      }else{
+        x.style.display="block";
       }
+      
     }
   </script>
 </html>
